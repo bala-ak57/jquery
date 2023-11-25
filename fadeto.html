@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div{
+             width: 120px;
+             height: 120px;
+             margin-bottom: 20px;
+         }
+         .one{
+            background-color: red;
+         }
+         .two{
+            background-color: green;
+         }
+         .three{
+            background-color: yellow;
+         }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <button id="fadein">FadeToggle</button>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <script>
+        $(document).ready( function(){
+            $("button").click( function(){
+               $(".one").fadeTo("slow", 0.9);
+               $(".two").fadeTo("slow", 0.7);
+               $(".three").fadeTo("slow", 0.4);
+            });
+        });
+    </script>
+</body>
+</html>
